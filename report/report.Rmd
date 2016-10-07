@@ -40,18 +40,15 @@ First, this data presents a statistical breakdown of the residuals.  In this cas
 
 **Plot 1: Sales v. TV Scatterplot and Regression Line**
 
-```{r,echo=FALSE}
-advertising.data <- read.csv("~/Documents/Senior Year/stat159-fall2016-hw02/data/Advertising.csv")
-reg1 <- lm(Sales ~ TV, advertising.data)
-
-TV <- advertising.data$TV
-Sales <- advertising.data$Sales
-
-plot(TV, Sales)
-abline(reg1, col = "#0000DD59")
+```{r ,echo=FALSE}
+library(png)
+library(grid)
+img <- readPNG("~/Documents/Senior Year/stat159-fall2016-hw02/images/scatterplot-tv-sales.png")
+ grid.raster(img)
 ```
 
 This scatterplot looks at each of the 200 data points and graphs the sales value on the y axis and the television advertising value on the x axis. Looking at the graphy, there is clearly a strong direct relationship between increasing TV ads and increasing sales. However, it is important to not that the distribution of the data is not homoscedastic as the residuals about the regression line increase with more advertising.
+
 
 #Conclusions
 
