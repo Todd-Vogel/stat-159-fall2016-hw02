@@ -1,0 +1,15 @@
+---
+title: 'HW 2: Simple Regression Analysis'
+author: "Todd Vogel"
+date: "10/6/2016"
+output: pdf_document
+---
+
+##Abstract
+
+The following reports looks into data on advertising costs across multiple media including television, radio, and newspaper as well as sales.  By utilizing linear modelling we effectively establish the relationship between advertising and sales numbers, specifically focusing on television. The results are a reprocution of the work in Chapter 3.1 in the book **An Introduction to Statistical Learning.**
+
+```{r setup, include=FALSE}
+
+```
+
